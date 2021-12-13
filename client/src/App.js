@@ -22,21 +22,11 @@ const App = () => {
         <Typography className={classes.heading} variant="h2" align="center">
           onTrack
         </Typography>
-        <img
-          className={classes.image}
-          src={onTrack}
-          alt="onTrack"
-          height="60"
-        />
+        <img className={classes.image} src={onTrack} alt="onTrack" height="60" />
       </AppBar>
       <Grow in>
         <Container>
-          <Grid
-            container
-            justifyContent="space-between"
-            alignItems="stretch"
-            spacing={3}
-          >
+          <Grid container justifyContent="space-between" alignItems="stretch" spacing={3}>
             <Grid item xs={12} sm={7}>
               <Posts />
             </Grid>
