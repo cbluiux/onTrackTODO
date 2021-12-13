@@ -31,8 +31,7 @@ const Form = () => {
         autoComplete="off"
         noValidate
         className={`${classes.root} ${classes.form}`}
-        onSubmit={handleSubmit}
-      >
+        onSubmit={handleSubmit}>
         <Typography variant="h6">Create a Task</Typography>
         <TextField
           name="creator"
@@ -79,8 +78,7 @@ const Form = () => {
           color="primary"
           size="large"
           type="submit"
-          fullWidth
-        >
+          fullWidth>
           Submit
         </Button>
         <Button
@@ -89,8 +87,7 @@ const Form = () => {
           color="secondary"
           size="small"
           onClick={clear}
-          fullWidth
-        >
+          fullWidth>
           Clear
         </Button>
       </form>
