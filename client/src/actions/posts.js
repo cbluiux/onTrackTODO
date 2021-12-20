@@ -10,6 +10,7 @@ export const getPosts = () => async (dispatch) => {
   }
 };
 
+// better naming conventions for actions will be to end in Thunk
 export const createPost = (post) => async (dispatch) => {
   try {
     const { data } = await api.createPost(post);

@@ -17,10 +17,9 @@ const Form = () => {
   const classes = useStyles();
   const dispatch = useDispatch();
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(createPost(postData));
-    console.log(postData);
   };
 
   const clear = () => {};
@@ -81,13 +80,7 @@ const Form = () => {
           fullWidth>
           Submit
         </Button>
-        <Button
-          className={classes.buttonSubmit}
-          variant="contained"
-          color="secondary"
-          size="small"
-          onClick={clear}
-          fullWidth>
+        <Button variant="contained" color="secondary" size="small" onClick={clear} fullWidth>
           Clear
         </Button>
       </form>
